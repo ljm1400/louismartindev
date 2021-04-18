@@ -11,6 +11,7 @@ import Experience from './Pages/Experience.js';
 import Projects from './Pages/Projects.js';
 import Home from './Pages/Home.js';
 import Contact from './Pages/Contact.js';
+import Footer from './Components/Footer.js';
 
 function App() {
   return (
@@ -35,8 +36,10 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer></Footer>
       </div>
     </Router>
+    
   );
 }
 
