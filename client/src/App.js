@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Nav from './Components/Nav.js';
 import About from './Pages/About.js';
-import Experience from './Pages/Experience.js';
 import Projects from './Pages/Projects.js';
 import Home from './Pages/Home.js';
 import Contact from './Pages/Contact.js';
@@ -22,9 +21,6 @@ function App() {
         <Switch>
           <Route path="/about">
             <About />
-          </Route>
-          <Route path="/experience">
-            <Experience />
           </Route>
           <Route path="/projects">
             <Projects />

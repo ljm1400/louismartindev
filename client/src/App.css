@@ -38,7 +38,7 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom right, rgb(146, 146, 146, .75), rgb(154, 250, 250, .75));
+  background-image: linear-gradient(to bottom right, rgb(146, 146, 146, .5), rgba(99, 212, 212, 0.75));
   min-height: 100vh;
   background-size: 100% 100%;
   background-repeat:no-repeat;
@@ -55,7 +55,9 @@ margin: auto;
 text-align: left;
 background-color:rgb(255, 252, 240);
 box-shadow: 5px 5px 5px grey;
+border-radius: 30px;
 }
+
 .projectTitle {
   margin: auto;
   overflow-wrap:normal;
@@ -77,4 +79,13 @@ box-shadow: 5px 5px 5px grey;
   left: 0;
   bottom: 0;
   margin-bottom: 0px;
+}
+
+.banner{
+  margin-top: 25px;
+  margin-left: 0;
+  background-color: white;
+  height: 100px; 
+  width: 100%;
+  border-radius: 5px 5px  25px 25px;
 }
