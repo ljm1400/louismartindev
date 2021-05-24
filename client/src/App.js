@@ -1,41 +1,26 @@
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import Nav from './Components/Nav.js';
-import About from './Pages/About.js';
-import Projects from './Pages/Projects.js';
-import Home from './Pages/Home.js';
-import Contact from './Pages/Contact.js';
-import Footer from './Components/Footer.js';
+import "./App.css";
+import Nav from "./Components/Nav.js";
+import About from "./Pages/About.js";
+import Projects from "./Pages/Projects.js";
+import Home from "./Pages/Home.js";
+import Contact from "./Pages/Contact.js";
+import Footer from "./Components/Footer.js";
+import React from "react";
+import Divider from "./Components/Divider";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Nav></Nav>
-
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </div>
-    </Router>
-    
+    <div className="App">
+      <Nav></Nav>
+      <Home />
+      <Divider />
+      <Projects />
+      <Divider />
+      <About />
+      <Divider />
+      <Contact />
+      <Footer></Footer>
+    </div>
   );
 }
 

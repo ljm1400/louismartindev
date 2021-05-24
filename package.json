@@ -1,0 +1,26 @@
+{
+  "name": "lmartin",
+  "version": "1.0.0",
+  "description": "Portfolio of Louis Martin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd ./client && npm run-script setup",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljm1400/myPage.git"
+  },
+  "author": "Louis Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ljm1400/myPage/issues"
+  },
+  "homepage": "https://github.com/ljm1400/myPage#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.0"
+  }
+}

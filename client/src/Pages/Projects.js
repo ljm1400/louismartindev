@@ -1,24 +1,28 @@
-import React from 'react'
+import React from "react";
 
 export default function Projects() {
-    return (
-        <div className = "container">
-            <h1 className = "mt-4 display-1">Projects</h1>
-
-            <div className = "row mt-4 projectBox">
-                <div className = "col-4">
-                    <img src = "https://i.redd.it/w3kr4m2fi3111.png" className = " projectImage" alt = "this image represents project 1"></img>
-                </div>
-                <h5 className = " display-5 col-2 projectTitle">Project1</h5>
-                <p className = "col-6 projectText"> Example Project 1: Testing text wrapping do not disturb sleeping time hello world please help yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada</p>
-            </div>
-            <div className = "row mt-4 projectBox">
-                <h5 className = " display-5 col-2 projectTitle">Project2</h5>
-                <p className = "col-6 projectText"> Example Project 2: Testing text wrapping do not disturb sleeping time hello world please help yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada yada</p>
-                <div className = "col-4">
-                    <img src = "https://i.redd.it/w3kr4m2fi3111.png" className = " projectImage" alt = "this image represents project 2"></img>
-                </div>
-            </div>
+  return (
+    <div id="projects" className="container">
+      <h3>Projects</h3>
+      <br />
+      <div className="project">
+        <h4 className="project-title">Pathfinding Visualizer</h4>
+        <div className="project-body">
+          <img className="projectImg" src="smallPathfindingV2.JPG"></img>
+          <div className="project-text">
+            <p>
+              This project is a web application created in React that allows a
+              user to interact with a grid to visualize a number of different
+              pathfinding algorithms. The user is able to draw walls, create
+              different types of mazes, and select an algorithm to search the
+              grid from start to finish.
+            </p>
+            <a href="https://pathfinding-visualization-v1.herokuapp.com/">
+              View Pathfinding Visualizer
+            </a>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
