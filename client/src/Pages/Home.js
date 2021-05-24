@@ -17,7 +17,13 @@ export default function Home() {
         <a href="https://www.linkedin.com/in/louismartin20/">
           <div className="linkedin"></div>
         </a>
-        <a href="https://github.com/ljm1400?tab=repositories">github</a>
+        <a href="https://github.com/ljm1400?tab=repositories">
+          <img
+            className="git-logo"
+            src="github-logo.png"
+            alt="Github Logo leading to my github page"
+          ></img>
+        </a>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   const text =
-    "Page authored by Louis Martin.                    Last Modified 5/20/2021";
+    "Page authored by Louis Martin.                    Last Modified 5/24/2021";
   return (
     <div className="footer">
       <small> {text} </small>
