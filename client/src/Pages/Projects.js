@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line
 import Divider from "../Components/Divider";
 
 export default function Projects() {
@@ -11,7 +12,11 @@ export default function Projects() {
           <h4 className="project-title">Pathfinding Visualizer</h4>
           <div className="project-body">
             <div className="project-img-container">
-              <img className="projectImg" src="smallPathfindingV2.JPG"></img>
+              <img
+                className="projectImg"
+                src="smallPathfindingV2.JPG"
+                alt="Screenshot of the pathfinding visualization application being described. Shows a solved maze completed by the application."
+              ></img>
             </div>
 
             <div className="project-text">

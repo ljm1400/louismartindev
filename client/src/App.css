@@ -32,16 +32,31 @@ body {
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
 }
+.nav-logo {
+  width: 10%;
+  height: 100%;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-size: 2rem !important;
   justify-self: flex-start;
-  position: absolute;
-  left: 10px;
 }
 
+.logo-img {
+  width: 48px;
+  height: 48px;
+}
+.main-nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .nav a {
   border: none;
   background: none;
@@ -156,6 +171,7 @@ body {
   width: 70ch;
   text-align: center;
 }
+
 .contact-form {
   width: 80%;
   height: 100%;
@@ -167,6 +183,7 @@ body {
   border-radius: 1rem;
   padding: 1rem 0px;
 }
+
 .form-container {
   margin-top: 2rem;
   width: 60%;
@@ -374,26 +391,36 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .nav-logo {
+    margin-left: 15px;
+  }
+
   .home-text-container {
     max-width: 80%;
   }
-
+  .home-text-container h1 {
+    font-size: 2rem;
+    align-self: center;
+  }
   .home-text-container h2 {
-    letter-spacing: 0.1rem;
+    letter-spacing: 0;
+    font-size: 2.5rem;
   }
 
   .home-text-container a {
     align-self: center;
     width: 50%;
   }
-
+  .project-title {
+    text-align: center;
+  }
   .project-body {
     flex-direction: column;
   }
 
   .project-text p {
     margin-top: 1rem;
-    max-width: 35ch;
+    width: 90%;
   }
   .project-text a {
     width: 60%;
@@ -437,7 +464,7 @@ body {
   .col p {
     color: white;
     font-weight: 300;
-    max-width: 35ch;
+    width: 90%;
     flex-wrap: wrap;
     padding: 1rem;
   }
@@ -449,6 +476,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .contact-form p {
+    width: 90%;
   }
 
   .input-container {
