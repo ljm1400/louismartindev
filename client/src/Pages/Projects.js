@@ -27,7 +27,7 @@ export default function Projects() {
                 different types of mazes, and select an algorithm to search the
                 grid from start to finish.
               </p>
-              <a href="https://pathfinding-visualization-v1.herokuapp.com/">
+              <a href="https://ljm1400-pathfinding-visualizer.zeet.app/">
                 View Pathfinding Visualizer
               </a>
             </div>
