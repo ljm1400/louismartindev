@@ -14,7 +14,7 @@ export default function Projects() {
             <div className="project-img-container">
               <img
                 className="projectImg"
-                src="smallPathfindingV2.JPG"
+                src="smallPathfindingV2.jpg"
                 alt="Screenshot of the pathfinding visualization application being described. Shows a solved maze completed by the application."
               ></img>
             </div>
