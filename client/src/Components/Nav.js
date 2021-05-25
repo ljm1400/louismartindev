@@ -13,9 +13,15 @@ export default function Nav() {
         </a>
       </div>
       <div className="main-nav">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <div className="nav-link">
+          <a href="#projects">Projects</a>
+        </div>
+        <div className="nav-link">
+          <a href="#about">About</a>
+        </div>
+        <div className="nav-link">
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </div>
   );
