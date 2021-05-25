@@ -236,10 +236,10 @@ body {
   background-color: #44b893;
   color: white;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
-.thank-you {
-  background-color: #44b893;
+.alert {
   position: relative;
   width: 50%;
   padding: 1rem;
@@ -249,21 +249,24 @@ body {
   justify-content: center;
   box-shadow: white 1px 1px 5px;
 }
-.thank-you h4 {
+.thank-you {
+  background-color: #44b893;
+}
+.alert h4 {
   color: white;
 }
-.thank-you p {
+.alert p {
   font-weight: 300;
   color: white;
 }
 
-.thank-you div {
+.alert div {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.thank-you button {
+.alert button {
   color: white;
   background: none;
   position: absolute;
@@ -273,6 +276,10 @@ body {
   font-size: 1rem;
   cursor: pointer;
   font-weight: bold;
+}
+
+.error {
+  background-color: rgb(216, 54, 54);
 }
 
 .hide {
@@ -510,11 +517,11 @@ body {
     color: white;
     padding: 0.5rem;
   }
-  .thank-you {
+  .alert {
     width: 70%;
   }
 
-  .thank-you p {
-    max-width: 35ch;
+  .alert p {
+    max-width: 80%;
   }
 }

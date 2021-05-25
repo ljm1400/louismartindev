@@ -27,9 +27,7 @@ export default function Projects() {
                 different types of mazes, and select an algorithm to search the
                 grid from start to finish.
               </p>
-              <a href="https://ljm1400-pathfinding-visualizer.zeet.app/">
-                View Pathfinding Visualizer
-              </a>
+              <a href="/pathfinding-visualizer">View Pathfinding Visualizer</a>
             </div>
           </div>
         </div>

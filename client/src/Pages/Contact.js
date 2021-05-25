@@ -5,31 +5,59 @@ export default function Contact() {
   const [email, setemail] = useState("");
   const [message, setmessage] = useState("");
   const [thankyou, setthankyou] = useState(false);
+  const [noSpam, setnoSpam] = useState(false);
+  const [spamAlert, setspamAlert] = useState(false);
+  const [emptyFields, setemptyFields] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, message }),
-    });
-    const data = await response.json();
-    if (data.status === 500) {
-      console.log(data.msg);
-    } else {
-      setname("");
-      setemail("");
-      setmessage("");
-      setthankyou(true);
-      setTimeout(dismiss, 15000);
+    if (noSpam) {
+      setspamAlert(true);
+      setTimeout(dismissSpamAlert, 15000);
+    } else if (
+      !noSpam &&
+      (name.length > 0 || email.length > 0 || message.length > 0)
+    ) {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+      const data = await response.json();
+      if (data.status === 500) {
+      } else {
+        setname("");
+        setemail("");
+        setmessage("");
+        setthankyou(true);
+        setTimeout(dismissthankyou, 15000);
+        setnoSpam(true);
+        setTimeout(resetSpam, 30000);
+      }
+    } else if (
+      name.length === 0 ||
+      email.length === 0 ||
+      message.length === 0
+    ) {
+      setemptyFields(true);
+      setTimeout(dismissemptyFields, 15000);
     }
   };
+  const resetSpam = () => {
+    setnoSpam(false);
+  };
 
-  const dismiss = () => {
+  const dismissthankyou = () => {
     setthankyou(false);
+  };
+  const dismissSpamAlert = () => {
+    setspamAlert(false);
+  };
+  const dismissemptyFields = () => {
+    setemptyFields(false);
   };
 
   return (
@@ -38,18 +66,35 @@ export default function Contact() {
       <br />
       <div className="contact-form">
         <p className="contact-text">
-          Need to get in contact with me? The best way is to send a message here
-          and I will respond to you by email as soon as possible!
+          For business inquiries and general questions please fill out the form
+          below and I will reach out to you as soon as possible!
         </p>
         <br />
-        <div className={thankyou ? `thank-you` : `thank-you hide`}>
-          <button onClick={dismiss}>x</button>
+        <div className={thankyou ? `alert thank-you` : `alert thank-you hide`}>
+          <button onClick={dismissthankyou}>x</button>
           <div>
             <h4>Thank you!</h4>
           </div>
           <p>
             Your message has been received and I will be in contact with you
-            soon!{" "}
+            soon!
+          </p>
+        </div>
+        <div className={spamAlert ? `alert error` : `alert error hide`}>
+          <button onClick={dismissSpamAlert}>x</button>
+          <div>
+            <h4>Sorry!</h4>
+          </div>
+          <p>Please wait to submit another contact form!</p>
+        </div>
+        <div className={emptyFields ? `alert error` : `alert error hide`}>
+          <button onClick={dismissemptyFields}>x</button>
+          <div>
+            <h4>Whoops!</h4>
+          </div>
+          <p>
+            Please make sure you have filled out all of the fields so I can
+            contact you!
           </p>
         </div>
         <form
