@@ -50,10 +50,14 @@ export default function Projects() {
             <div className="project-text">
               <p>
                 This application was a 3 person final project for a
-                web-development course. The project was written using HTML, CSS,
-                Bootstrap, Express and MongoDB. I contributed the initial idea,
-                designs and website layouts, as well as assisted with back-end
-                setup and database integration.
+                web-development course. The project is a social media platform
+                centered around rock climbers and hikers that allow users to
+                share photos and descriptions of places they have gone hiking or
+                climbing, as well as interacting with other people's posts! The
+                project was written using HTML, CSS, Bootstrap, Express and
+                MongoDB. I contributed the initial idea, designs and website
+                layouts, as well as assisted with back-end setup and database
+                integration.
               </p>
               <a
                 className="project-btn"
@@ -72,10 +76,13 @@ export default function Projects() {
             <div className="project-text">
               <p>
                 This is a prototype application created with React and Express
-                for a Survey Web Application microservice. We worked in a team
-                of 10 students, each tasked with different aspects of the
-                application. I contributed to both front-end design and logic as
-                well as back-end endpoints and database integration.
+                for a Survey Web Application microservice. The application is
+                aimed to allow managers to send their employees anonymous
+                surveys such that they can get feedback without knowing the
+                identities of those that submitted answers. We worked in a team
+                of 10 students, each tasked with developing different aspects of
+                the application. I contributed to both front-end design and
+                logic as well as back-end endpoints and database integration.
               </p>
             </div>
             <div className="project-btn-align">
