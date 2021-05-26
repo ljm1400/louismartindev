@@ -43,6 +43,4 @@ app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on ${port}`);
-});
+app.listen(port, () => {});
