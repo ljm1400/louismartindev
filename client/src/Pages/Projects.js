@@ -9,6 +9,32 @@ export default function Projects() {
       <br />
       <div className="projects">
         <div className="project">
+          <h4 className="project-title">Web Designs</h4>
+          <div className="project-body">
+            <div className="project-img-container">
+              <img
+                className="projectImg"
+                src="web-templates-small.jpg"
+                alt="Screenshot of the pathfinding visualization application being described. Shows a solved maze completed by the application."
+              ></img>
+            </div>
+
+            <div className="project-text">
+              <p>
+                This React project is a place where I will be creating and
+                designing some web templates to test some ideas for themes and
+                layouts. Currently the glassy theme has been completed, and the
+                floral, space, dark and light themes are coming soon.
+              </p>
+              <a className="project-btn" href="/web-templates">
+                View Web Templates Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <Divider />
+        <div className="project">
           <h4 className="project-title">Pathfinding Visualizer</h4>
           <div className="project-body">
             <div className="project-img-container">
