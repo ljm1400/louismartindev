@@ -64,10 +64,12 @@ body {
   border: none;
   background: none;
   height: 100%;
+  transition: background-color 0.5s ease;
 }
 .nav-link:hover {
   background-color: rgba(73, 85, 99);
   border-radius: 0.25rem;
+  transition: background-color 0.5s ease;
 }
 .main-nav a {
   color: white;
@@ -96,7 +98,6 @@ body {
 }
 
 .home-text-container h1 {
-  align-self: flex-end;
   font-size: 3rem;
   color: white;
   text-shadow: black 1px 1px 5px;
@@ -115,7 +116,6 @@ body {
   text-shadow: black 1px 1px 5px;
 }
 .home-text-container a {
-  align-self: flex-end;
   border: none;
   background-color: #44b893;
   color: white;
@@ -128,9 +128,11 @@ body {
   text-align: center;
   border-radius: 0.5rem;
   box-shadow: black 1px 1px 5px;
+  transition: background-color 0.5s ease;
 }
 .home-text-container a:hover {
   background-color: rgb(77, 207, 165);
+  transition: background-color 0.5s ease;
 }
 
 .break {
@@ -257,10 +259,12 @@ body {
   padding: 0.5rem;
   cursor: pointer;
   box-shadow: black 1px 1px 5px;
+  transition: background-color 0.5s ease;
 }
 
 .form-container button:hover {
   background-color: rgb(77, 207, 165);
+  transition: background-color 0.5s ease;
 }
 
 .alert {
@@ -375,11 +379,14 @@ body {
   padding: 1rem;
   width: 20ch;
   box-shadow: black 1px 1px 5px;
+  transition: background-color 0.5s ease;
 }
 
 .project-btn:hover {
   background-color: rgb(77, 207, 165);
+  transition: background-color 0.5s ease;
 }
+
 .project-img-container {
   margin-right: 1rem;
   width: 100%;
