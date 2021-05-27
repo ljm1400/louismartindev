@@ -27,7 +27,7 @@ export default function Projects() {
                 floral, space, dark and light themes are coming soon.
               </p>
               <a className="project-btn" href="/web-templates">
-                View Web Templates Demo
+                View Demo
               </a>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function Projects() {
                 grid from start to finish.
               </p>
               <a className="project-btn" href="/pathfinding-visualizer">
-                View Visualizer Demo
+                View Demo
               </a>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function Projects() {
                 className="project-btn"
                 href="https://github.com/ljm1400/cs326-final-Dalet"
               >
-                View Klimbs Repository
+                View Repository
               </a>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function Projects() {
                 className="project-btn"
                 href="https://github.com/ljm1400/cs320-f19-finalsurvey"
               >
-                View Final Survey Repository
+                View Repository
               </a>
             </div>
           </div>
