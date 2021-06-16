@@ -32,8 +32,9 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <br />
+
         <Divider />
+        <br />
         <div className="project">
           <h4 className="project-title">Pathfinding Visualizer</h4>
           <div className="project-body">
@@ -59,7 +60,33 @@ export default function Projects() {
             </div>
           </div>
         </div>
+
+        <Divider />
         <br />
+        <div className="project">
+          <h4 className="project-title">Generative Art Creation Tool</h4>
+          <div className="project-body">
+            <div className="project-img-container">
+              <img
+                className="projectImg"
+                src="generativeart.jpg"
+                alt="Screenshot of the pathfinding visualization application being described. Shows a solved maze completed by the application."
+              ></img>
+            </div>
+
+            <div className="project-text">
+              <p>
+                This project utilizes Javascript Canvas to allow users to create
+                art using a number of generative shapes. It allows users to
+                create art using these shapes and save the images as png files.
+              </p>
+              <a className="project-btn" href="/generative-art-tool">
+                View Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
         <Divider />
         <br />
 
