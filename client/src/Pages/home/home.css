@@ -1,0 +1,143 @@
+
+.wheel{
+    --black: black;
+    --white: white;
+    --clr-primary: hsl(212, 15%, 45%);
+    --clr-secondary: hsl(189, 63%, 50%);
+    --clr-accent-1: hsl(178, 96%, 30%);
+    --clr-accent-2: hsl(156, 46%, 52%);
+    --clr-accent-3: hsl(102, 59%, 68%);
+    --clr-accent-4: hsl(60, 92%, 71%);
+    --clr-primary-dark: hsl(212, 15%, 5%);
+    --clr-secondary-dark: hsl(189, 63%, 20%);
+    --clr-accent-1-dark: hsl(178, 96%, 10%);
+    --clr-accent-2-dark: hsl(156, 46%, 32%);
+    --clr-accent-3-dark: hsl(102, 59%, 48%);
+    --clr-accent-4-dark: hsl(60, 92%, 31%);
+    display:grid;
+    height: 100%;
+    width: 100%;
+    place-content: center;
+    overflow:hidden;
+    z-index: 0;
+}
+
+.wheel .center-image{
+    position:relative;
+    width: 15rem;
+    height:15rem;
+}
+
+.wheel .center-image * {
+    position: absolute;
+    width: inherit;
+    height:inherit;
+    border-radius: 50%;
+    transition: opacity 500ms;
+}
+
+.wheel .center-image *:not(:first-child):hover{
+    opacity:0;
+}
+.center-image div {
+    
+    background: var(--clr-primary);
+    text-align: center;
+
+}
+.center-image div h2{
+    color: var(--black);
+    line-height: 4rem;
+    margin: 3rem 0;
+}
+
+.wheel ul{
+    list-style: none;
+    position: relative;
+    text-align: center;
+    transform: translate(1rem, 1.25rem);
+}
+
+.wheel ul li {
+    position:absolute;
+    width: 8rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: var(--clr-primary) 1px 1px 6px;
+    overflow:hidden;
+    place-content: center;
+
+}
+.wheel ul li *{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+.wheel ul li a {
+    opacity: 0;
+    text-decoration: none;
+    color: var(--white);
+    width:100%;
+    height:100%;
+    place-items: center;
+    transition: opacity 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.wheel ul li:nth-child(1){
+    background: linear-gradient( to bottom right, var(--clr-accent-1),  80%, var(--clr-accent-1-dark));
+    transform: translate(0rem, -30rem);
+}
+.wheel ul li:nth-child(1) a{
+    background: linear-gradient( to bottom right, var(--clr-accent-1),  20%, var(--clr-accent-1-dark));
+}
+
+.wheel ul li:nth-child(2){
+    background:linear-gradient( to bottom right, var(--clr-accent-2),  80%, var(--clr-accent-2-dark));
+    transform: translate(18rem, -14rem);
+}
+
+.wheel ul li:nth-child(2) a{
+    background:linear-gradient( to bottom right, var(--clr-accent-2),  20%, var(--clr-accent-2-dark));
+}
+
+.wheel ul li:nth-child(3){
+    background: linear-gradient( to bottom right, var(--clr-accent-3),  80%, var(--clr-accent-3-dark));
+    transform: translate(-18rem, -14rem);
+}
+
+.wheel ul li:nth-child(3) a{
+    background: linear-gradient( to bottom right, var(--clr-accent-3),  20%, var(--clr-accent-3-dark));
+}
+.wheel ul li:nth-child(4){
+    background:linear-gradient( to bottom right, var(--clr-accent-4),  80%, var(--clr-accent-4-dark));
+    transform: translate(-10rem, 4rem);
+}
+
+.wheel ul li:nth-child(4) a{
+    background:linear-gradient( to bottom right, var(--clr-accent-4),  20%, var(--clr-accent-4-dark));
+}
+.wheel ul li:nth-child(5){
+    background: linear-gradient( to bottom right, var(--clr-secondary),  80%, var(--clr-secondary-dark));
+    transform: translate(10rem, 4rem);
+}
+.wheel ul li:nth-child(5) a{
+    background: linear-gradient( to bottom right, var(--clr-secondary),  20%, var(--clr-secondary-dark));
+}
+
+
+
+.wheel ul li:hover a {
+    opacity: 1;
+}
+
+.wheel ul li img {
+    width: 3rem;
+    height:3rem;
+}
